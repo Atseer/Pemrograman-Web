@@ -22,7 +22,7 @@ body {
 /* Kolom Kiri */
 .left-panel {
     width: 38%;
-    background-color: #1953a6; /* Diubah menjadi Biru */
+    background-color: #1953a6;  
     color: white;
     padding: 50px 30px;
     position: relative;
@@ -166,7 +166,7 @@ body {
 }
 
 .section-title span {
-    background-color: #1953a6; /* Diubah menjadi biru */
+    background-color: #1953a6;  
     color: white;
     padding: 8px 25px;
     border-radius: 20px;
@@ -179,15 +179,14 @@ body {
     content: "";
     flex: 1;
     height: 1.5px;
-    background-color: #1953a6; /* Diubah menjadi biru */
+    background-color: #1953a6;  
     margin-left: 15px;
 }
 
 .timeline-item {
     margin-bottom: 30px;
 }
-
-/* Badge penanda tahun untuk Education */
+ 
 .time-badge {
     display: inline-block;
     background-color: #1953a6;
@@ -226,8 +225,8 @@ body {
     width: 45px;
     height: 45px;
     border-radius: 50%;
-    border: 2px solid #1953a6; /* Diubah menjadi biru */
-    color: #1953a6; /* Diubah menjadi biru */
+    border: 2px solid #1953a6;  
+    color: #1953a6;  
     display: flex;
     justify-content: center;
     align-items: center;
@@ -259,7 +258,7 @@ body {
 .hobby-item i {
     font-size: 26px;
     margin-bottom: 12px;
-    color: #1953a6; /* Diubah menjadi biru */
+    color: #1953a6;  
 }
 
 .hobby-item span {
