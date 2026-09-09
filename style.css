@@ -1,0 +1,268 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #d9dfeb;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+
+.resume-wrapper {
+    display: flex;
+    width: 950px;
+    background: #f7f7f7;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+}
+
+/* Kolom Kiri */
+.left-panel {
+    width: 38%;
+    background-color: #1953a6; /* Diubah menjadi Biru */
+    color: white;
+    padding: 50px 30px;
+    position: relative;
+}
+
+.header-name h1 {
+    font-weight: 300;
+    font-size: 34px;
+    line-height: 1.2;
+    letter-spacing: 1px;
+}
+
+.header-name h1 span {
+    font-weight: 700;
+}
+
+.header-name h2 {
+    font-size: 12px;
+    font-weight: 400;
+    margin-top: 8px;
+    letter-spacing: 1px;
+    color: #cce0ff; /* Diubah menyesuaikan tema biru */
+}
+
+/* Perbaikan agar kotak About Me tidak tertimpa gambar */
+.profile-section {
+    margin-top: 75px; 
+    position: relative;
+}
+
+.profile-img-container {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid white;
+    position: absolute;
+    top: -65px; /* Menggantung tepat di tengah batas atas garis kotak */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    background-color: white;
+}
+
+.profile-img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about-box {
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    border-radius: 12px;
+    padding: 85px 25px 25px; /* Jarak aman agar teks di bawah gambar */
+    margin-top: 0;
+    text-align: left;
+}
+
+.about-box h3 {
+    font-size: 15px;
+    margin-bottom: 12px;
+    letter-spacing: 1px;
+}
+
+.about-box p {
+    font-size: 12px;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.contact-info {
+    margin-top: 35px;
+}
+
+.contact-item {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 12px 20px;
+    border-radius: 25px;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+}
+
+.contact-item i {
+    margin-right: 15px;
+    font-size: 16px;
+    width: 20px;
+    text-align: center;
+}
+
+.languages {
+    margin-top: 45px;
+}
+
+.languages h3 {
+    font-size: 15px;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.lang-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    font-size: 13px;
+}
+
+.dots {
+    display: flex;
+    gap: 6px;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 1px solid white;
+}
+
+.dot.filled {
+    background-color: white;
+}
+
+/* Kolom Kanan */
+.right-panel {
+    width: 62%;
+    padding: 50px 40px;
+    background-color: #f2f2f2;
+}
+
+.section {
+    margin-bottom: 40px;
+}
+
+.section-title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.section-title span {
+    background-color: #1953a6; /* Diubah menjadi biru */
+    color: white;
+    padding: 8px 25px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+.section-title::after {
+    content: "";
+    flex: 1;
+    height: 1.5px;
+    background-color: #1953a6; /* Diubah menjadi biru */
+    margin-left: 15px;
+}
+
+.timeline-item {
+    margin-bottom: 30px;
+}
+
+/* Badge penanda tahun untuk Education */
+.time-badge {
+    display: inline-block;
+    background-color: #1953a6;
+    color: white;
+    padding: 4px 12px;
+    border-radius: 15px;
+    font-size: 11px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.timeline-item h4 {
+    color: #222;
+    font-size: 15px;
+    margin-bottom: 8px;
+}
+
+.timeline-item p {
+    color: #666;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+.skill-item {
+    display: flex;
+    align-items: center;
+}
+
+.skill-icon {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 2px solid #1953a6; /* Diubah menjadi biru */
+    color: #1953a6; /* Diubah menjadi biru */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    margin-right: 15px;
+    font-size: 13px;
+}
+
+.skill-item span {
+    font-size: 13px;
+    color: #333;
+    font-weight: 600;
+}
+
+.hobbies-grid {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+    padding-right: 40px;
+}
+
+.hobby-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #444;
+}
+
+.hobby-item i {
+    font-size: 26px;
+    margin-bottom: 12px;
+    color: #1953a6; /* Diubah menjadi biru */
+}
+
+.hobby-item span {
+    font-size: 11px;
+    font-weight: 600;
+}
