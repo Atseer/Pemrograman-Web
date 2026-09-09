@@ -44,10 +44,9 @@ body {
     font-weight: 400;
     margin-top: 8px;
     letter-spacing: 1px;
-    color: #cce0ff; /* Diubah menyesuaikan tema biru */
+    color: #cce0ff;  
 }
-
-/* Perbaikan agar kotak About Me tidak tertimpa gambar */
+ 
 .profile-section {
     margin-top: 75px; 
     position: relative;
@@ -60,7 +59,7 @@ body {
     overflow: hidden;
     border: 5px solid white;
     position: absolute;
-    top: -65px; /* Menggantung tepat di tengah batas atas garis kotak */
+    top: -65px;  
     left: 50%;
     transform: translateX(-50%);
     z-index: 2;
@@ -76,7 +75,7 @@ body {
 .about-box {
     border: 1px solid rgba(255, 255, 255, 0.6);
     border-radius: 12px;
-    padding: 85px 25px 25px; /* Jarak aman agar teks di bawah gambar */
+    padding: 85px 25px 25px; 
     margin-top: 0;
     text-align: left;
 }
