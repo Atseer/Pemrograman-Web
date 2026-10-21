@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplikasi Web Multi-Halaman</title> 
+    <link rel="stylesheet" href="style.css">
+</head>
+<body> 
+    <div class="nav-tabs">
+        <button class="tab-btn active" onclick="switchTab('kodePosTab')">Pencarian Kode Pos</button>
+        <button class="tab-btn" onclick="switchTab('emailTab')">Validasi Email</button>
+    </div>
+ 
+    <div id="kodePosTab" class="tab-content active">
+        <div class="card">
+            <h2>Pencarian Kode Pos Indonesia</h2>
+            
+            <div class="form-group">
+                <label for="provinsi">Provinsi:</label>
+                <select id="provinsi">
+                    <option value="">-- Pilih Provinsi --</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="kabupaten">Kabupaten / Kota:</label>
+                <select id="kabupaten" disabled>
+                    <option value="">-- Pilih Kabupaten / Kota --</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="kecamatan">Kecamatan:</label>
+                <select id="kecamatan" disabled>
+                    <option value="">-- Pilih Kecamatan --</option>
+                </select>
+            </div>
+
+            <div id="resultBox" class="info-box" style="display: none;">
+                <h4>Informasi Daerah & Kode Pos</h4>
+                <p><strong>Provinsi:</strong> <span id="outProvinsi">-</span></p>
+                <p><strong>Kabupaten/Kota:</strong> <span id="outKabupaten">-</span></p>
+                <p><strong>Kecamatan:</strong> <span id="outKecamatan">-</span></p>
+                <p><strong>Kode Pos:</strong> <span id="outKodePos">-</span></p>
+            </div>
+        </div>
+    </div>
+ 
+    <div id="emailTab" class="tab-content" style="display: none;">
+        <div class="card">
+            <h2>Email Validation Form</h2>
+            <div class="form-group">
+                <label for="emailInput">Enter your email:</label>
+                <input type="email" id="emailInput" placeholder="example@domain.com">
+            </div>
+            <button id="submitEmail" class="btn-submit">Submit</button>
+            <p id="emailResult" style="margin-top: 15px; font-weight: bold;"></p>
+        </div>
+    </div>
+ 
+    <script src="script.js"></script>
+</body>
+</html>
